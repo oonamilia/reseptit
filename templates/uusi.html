@@ -1,0 +1,35 @@
+<html>
+
+<h2 class="contenth2">Luo uusi resepti</h2>
+
+<form class="justFont" id="newPageForm" method="post" action="./php/uusi.php">
+
+<table id="submitTable">
+	<tr>
+		<td>Sivun nimi:</td>
+		<td><input class="nameInput" type="text" name="siteName"></td>
+	</tr>
+	<tr>
+		<td>Sivun otsikko:</td>
+		<td><input class="nameInput" type="text" name="h2"></td>
+	</tr>
+</table>
+
+<div id="ingr">
+
+<p> Määrä: <input type="text" name="0"> Ainesosa: <input type="text" name="ingr0"></p> 
+
+</div>
+
+<button type="button" class="prettyButton" ng-click="addFields()">Lisää ainesosa</button>
+<p style="visibility: hidden; float: right;"> <input type="text" name="rowAmount" value={{rowAmount}}>{{rowAmount}}</p>
+<br>
+
+<p> Valmistusohjeet:</p><textarea name="ohje" cols="100" rows="10"></textarea>
+<br>
+<br>
+<input type="submit" class="prettyButton" name="createBtn" value="Luo uusi sivu">
+
+</form>
+
+</html> 

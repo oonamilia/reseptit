@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Reseptit</title>
+<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- AngularJS -->
+	<script src="js/angular/angular.min.js"></script>
+	<!-- NgRoute -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+	<!-- App.js -->
+	<script src="js/app.js" type='text/javascript'></script>
+	
+	
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Muli" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Syncopate:700" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet"> 
+	
+</head>
+
+<body ng-app="app">
+
+<header class="banner">
+<!-- <img src="img/porkks.png" height="200px" width="200px"></img> -->
+<h1 class="myHeadline"> <a id="headlineLink" href="#etusivu"> Reseptit </a></h1>
+<!-- <form style="position:absolute;top:6px;left:1%;">
+			<input type="text" name="search" placeholder="Search.. tämä siirtyy..">
+		</form> -->
+</header>
+<nav class="navg"> 
+	<div class="navLinks">
+		<a class="navLink" href="#etusivu">Etusivu</a>
+		<a class="navLink" href="#kaikki">Kaikki reseptit</a>
+		<a class="navLink" href="#uusi">Lisää uusi resepti</a>
+		
+	</div>
+</nav>
+
+<div class="container">
+
+<ng-view></ng-view>
+
+</div>
+
+<footer>
+	| Oona 2016 |
+</footer>
+
+</body>
+
+</html>
